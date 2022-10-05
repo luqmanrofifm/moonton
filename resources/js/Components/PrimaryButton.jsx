@@ -13,11 +13,15 @@ PrimaryButton.propTypes = {
         "white-outline"
     ]),
     processing: PropTypes.bool,
-    children: PropTypes.bool,
+    children: PropTypes.node,
 }
 
 export default function PrimaryButton({ 
-    type = 'submit', className = '', variant = 'primary', processing, children }) {
+    type = 'submit', 
+    className = '', 
+    variant = 'primary', 
+    processing, 
+    children }) {
     return (
         <button
             type={type}
