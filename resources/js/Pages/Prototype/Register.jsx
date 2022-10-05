@@ -79,11 +79,13 @@ export default function Register(){
                                     Sign Up
                                 </span>
                             </a> */}
-                            <PrimaryButton type="button">
-                                <span className='text-base font-semibold'>
-                                    Sign Up
-                                </span>
-                            </PrimaryButton>
+                            <Link href={route("prototype.dashboard")}>
+                                <PrimaryButton type="button">
+                                    <span className='text-base font-semibold'>
+                                        Sign Up
+                                    </span>
+                                </PrimaryButton>
+                            </Link>
                             {/* <a href="sign_in.html" className="rounded-2xl border border-white py-[13px] text-center">
                                 <span className="text-base text-white">
                                     Sign In to My Account

@@ -62,11 +62,13 @@ export default function Login(){
                                         Start Watching
                                     </span>
                                 </a> */}
-                                <PrimaryButton type="button" variant='primary'>
-                                    <span className='text-base font-semibold'>
-                                        Start Watching
-                                    </span>
-                                </PrimaryButton>
+                                <Link href={route('prototype.dashboard')}>
+                                    <PrimaryButton type="button" variant='primary'>
+                                        <span className='text-base font-semibold'>
+                                            Start Watching
+                                        </span>
+                                    </PrimaryButton>
+                                </Link>
                                 {/* <a href="sign_up.html" className="rounded-2xl border border-white py-[13px] text-center">
                                     <span className="text-base text-white">
                                         Create New Account
