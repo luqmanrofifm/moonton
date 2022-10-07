@@ -12,7 +12,7 @@ class SubscriptionPlan extends Model
     use HasFactory, SoftDeletes;
     protected $fillable = ['name', 'price', 'active_period_in_months', 'features'];
 
-    public function SubscriptionPlan(): BelongsTo{
-        return $this->belongsTo(SubscriptionPlan::class);
-    }
+    // public function SubscriptionPlan(): BelongsTo{
+    //     return $this->belongsTo(SubscriptionPlan::class);
+    // }
 }
